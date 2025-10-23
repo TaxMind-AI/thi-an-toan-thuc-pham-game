@@ -20,57 +20,67 @@ export interface Level {
 export const levels: Level[] = [
   {
     id: 1,
-    imageUrl: "/assets/scenes/level-1_1.png",
-    mission: "Chào mừng Thám Tử Nhí! Hãy tìm 3 món đồ không an toàn trong bức tranh này nhé.",
+    imageUrl: "/assets/scenes/level-1_2.png",
+    mission: "Chào mừng Thám Tử Nhí! Hãy tìm ra điểm không an toàn trong bức tranh này nhé.",
     clues: [
       {
         id: 'clue-1-1',
-        position: { top: 65, left: 20, width: 15, height: 15 },
+        position: { top: 60, left: 55, width: 25, height: 20 },
         isUnsafe: true,
-        feedback: "Chính xác! Chai tương ớt này không có nhãn mác, rất nguy hiểm!"
-      },
-      {
-        id: 'clue-1-2',
-        position: { top: 75, left: 40, width: 20, height: 10 },
-        isUnsafe: true,
-        feedback: "Đúng rồi! Xiên que này không được che đậy, ruồi có thể bâu vào."
-      },
-      {
-        id: 'clue-1-3',
-        position: { top: 50, left: 70, width: 18, height: 18 },
-        isUnsafe: true,
-        feedback: "Giỏi quá! Bịch bánh tráng trộn này không ghi ngày sản xuất và hạn sử dụng."
-      },
-      {
-        id: 'clue-1-4',
-        position: { top: 20, left: 10, width: 25, height: 25 },
-        isUnsafe: false,
-        feedback: "Đây là một chai nước suối có niêm phong cẩn thận. An toàn để uống!"
+        feedback: "Chính xác! Người bán hàng dùng tay trần lấy đá sau khi cầm tiền rất mất vệ sinh."
       }
     ]
   },
   {
     id: 2,
-    imageUrl: "/assets/scenes/level-2_1.png",
-    mission: "Canteen trường học trông thật sạch sẽ! Nhưng hãy cẩn thận tìm ra 3 điểm đáng ngờ nhé.",
-    clues: []
+    imageUrl: "/assets/scenes/level-2_2.png",
+    mission: "Canteen trường học trông thật sạch sẽ! Nhưng hãy cẩn thận tìm ra điểm đáng ngờ nhé.",
+    clues: [
+      {
+        id: 'clue-2-1',
+        position: { top: 65, left: 40, width: 30, height: 20 },
+        isUnsafe: true,
+        feedback: "Đúng vậy! Thức ăn không được che đậy cẩn thận sẽ dễ bị ruồi bâu và vi khuẩn xâm nhập."
+      }
+    ]
   },
   {
     id: 3,
-    imageUrl: "/assets/scenes/level-3_1.png",
-    mission: "Siêu thị có rất nhiều đồ ăn ngon. Hãy giúp Thám Tử Nhí chọn 3 sản phẩm an toàn.",
-    clues: []
+    imageUrl: "/assets/scenes/level-3_2.png",
+    mission: "Siêu thị có rất nhiều đồ ăn ngon. Hãy giúp Thám Tử Nhí tìm ra sản phẩm không an toàn.",
+    clues: [
+      {
+        id: 'clue-3-1',
+        position: { top: 55, left: 60, width: 20, height: 20 },
+        isUnsafe: true,
+        feedback: "Cẩn thận! Hộp sữa bị phồng, biến dạng có thể đã bị hỏng."
+      }
+    ]
   },
   {
     id: 4,
-    imageUrl: "/assets/scenes/level-4_1.png",
-    mission: "Vào bếp thôi! Tìm 3 dụng cụ hoặc hành động giúp đảm bảo vệ sinh khi nấu ăn.",
-    clues: []
+    imageUrl: "/assets/scenes/level-4_2.png",
+    mission: "Vào bếp thôi! Tìm ra một hành động không đảm bảo vệ sinh khi nấu ăn.",
+    clues: [
+      {
+        id: 'clue-4-1',
+        position: { top: 50, left: 30, width: 40, height: 25 },
+        isUnsafe: true,
+        feedback: "Rất đúng! Dùng chung thớt cho thịt sống và rau củ chín gây nhiễm khuẩn chéo, rất nguy hiểm."
+      }
+    ]
   },
   {
     id: 5,
-    imageUrl: "/assets/scenes/level-5_1.png",
-    mission: "Thử thách cuối cùng! Hãy tìm ra 3 gian hàng thực phẩm an toàn tại lễ hội ẩm thực này.",
-    clues: []
+    imageUrl: "/assets/scenes/level-5_2.png",
+    mission: "Thử thách cuối cùng! Hãy tìm ra gian hàng thực phẩm không an toàn tại lễ hội ẩm thực này.",
+    clues: [
+      {
+        id: 'clue-5-1',
+        position: { top: 60, left: 15, width: 30, height: 25 },
+        isUnsafe: true,
+        feedback: "Giỏi lắm! Rác thải để tràn lan ngay cạnh khu vực chế biến là cực kỳ mất vệ sinh."
+      }
+    ]
   }
 ];

@@ -5,14 +5,14 @@ export const MascotDialog = () => {
   const { currentLevel } = useGame();
 
   return (
-    <div className="absolute bottom-4 left-4 right-4 bg-white p-4 rounded-lg shadow-xl border-2 border-blue-500">
+    <div className="absolute bottom-1 left-1 right-1 bg-white/90 p-1 rounded-lg shadow-lg border border-blue-300">
       <div className="flex items-center">
         <img 
-          src="https://via.placeholder.com/80x80.png?text=Mascot" 
+          src="/assets/mascot/red-panda.png" 
           alt="Mascot" 
-          className="w-20 h-20 rounded-full mr-4"
+          className="w-16 h-16 mr-1"
         />
-        <p className="text-lg text-gray-800">{currentLevel.mission}</p>
+        <p className="text-xs text-gray-800 flex-1">{currentLevel.mission}</p>
       </div>
     </div>
   );

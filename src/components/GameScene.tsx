@@ -14,8 +14,8 @@ export const GameScene = ({ onClueSelect }: GameSceneProps) => {
     <div className="w-full h-full relative overflow-hidden rounded-lg shadow-lg bg-gray-200">
       <TransformWrapper>
         <TransformComponent>
-          <div className="relative w-[1024px] h-[768px]">
-            <img src={currentLevel.imageUrl} alt="Game Scene" className="w-full h-full" />
+          <div className="relative w-full h-full">
+            <img src={currentLevel.imageUrl} alt="Game Scene" className="w-full h-full object-contain" />
             {currentLevel.clues.map(clue => (
               <ClueComponent key={clue.id} clue={clue} onClueSelect={onClueSelect} />
             ))}

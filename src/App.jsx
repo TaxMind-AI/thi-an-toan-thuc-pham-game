@@ -3,10 +3,12 @@ import { GameProvider, useGame } from './contexts/GameContext';
 import { GameScene } from './components/GameScene';
 import { MascotDialog } from './components/MascotDialog';
 import { FeedbackModal } from './components/FeedbackModal';
+import { IntroModal } from './components/IntroModal';
 
 function Game() {
   const { currentLevel, selectClue } = useGame();
   const [feedback, setFeedback] = useState('');
+  const [showIntro, setShowIntro] = useState(true);
 
   const handleClueSelect = (clueId) => {
     const clue = currentLevel.clues.find(c => c.id === clueId);
@@ -16,10 +18,14 @@ function Game() {
     }
   };
 
+  if (showIntro) {
+    return <IntroModal onStart={() => setShowIntro(false)} />;
+  }
+
   return (
-    <div className="w-full h-full max-w-screen-lg max-h-screen-lg mx-auto p-4 flex flex-col">
-      <header className="text-center mb-4">
-        <h1 className="text-4xl font-bold text-blue-600">Thám Tử Nhí</h1>
+    <div className="w-full h-full max-w-md mx-auto flex flex-col p-2">
+      <header className="text-center mb-2">
+        <h1 className="text-3xl font-bold text-blue-600">Thám Tử Nhí</h1>
       </header>
       <main className="flex-1 relative">
         <GameScene onClueSelect={handleClueSelect} />

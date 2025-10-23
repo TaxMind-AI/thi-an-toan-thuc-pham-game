@@ -23,14 +23,14 @@ function Game() {
   }
 
   return (
-    <div className="w-full h-full max-w-md mx-auto flex flex-col p-2">
-      <header className="text-center mb-2">
-        <h1 className="text-3xl font-bold text-blue-600">Thám Tử Nhí</h1>
+    <div className="w-full h-full max-w-sm mx-auto flex flex-col p-1 bg-white rounded-lg shadow-lg">
+      <header className="text-center py-2">
+        <h1 className="text-2xl font-bold text-blue-600">Thám Tử Nhí</h1>
       </header>
-      <main className="flex-1 relative">
+      <main className="flex-1 relative overflow-hidden">
         <GameScene onClueSelect={handleClueSelect} />
-        <MascotDialog />
       </main>
+      <MascotDialog />
       {feedback && <FeedbackModal message={feedback} onClose={() => setFeedback('')} />}
     </div>
   );
@@ -39,7 +39,7 @@ function Game() {
 function App() {
   return (
     <GameProvider>
-      <div className="w-screen h-screen bg-blue-50">
+      <div className="w-screen h-screen bg-gray-200 flex items-center justify-center p-2">
         <Game />
       </div>
     </GameProvider>

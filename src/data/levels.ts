@@ -20,7 +20,7 @@ export interface Level {
 export const levels: Level[] = [
   {
     id: 1,
-    imageUrl: "/assets/scenes/level-1.png",
+    imageUrl: "/assets/scenes/level-1_1.png",
     mission: "Chào mừng Thám Tử Nhí! Hãy tìm 3 món đồ không an toàn trong bức tranh này nhé.",
     clues: [
       {
@@ -48,5 +48,29 @@ export const levels: Level[] = [
         feedback: "Đây là một chai nước suối có niêm phong cẩn thận. An toàn để uống!"
       }
     ]
+  },
+  {
+    id: 2,
+    imageUrl: "/assets/scenes/level-2_1.png",
+    mission: "Canteen trường học trông thật sạch sẽ! Nhưng hãy cẩn thận tìm ra 3 điểm đáng ngờ nhé.",
+    clues: []
+  },
+  {
+    id: 3,
+    imageUrl: "/assets/scenes/level-3_1.png",
+    mission: "Siêu thị có rất nhiều đồ ăn ngon. Hãy giúp Thám Tử Nhí chọn 3 sản phẩm an toàn.",
+    clues: []
+  },
+  {
+    id: 4,
+    imageUrl: "/assets/scenes/level-4_1.png",
+    mission: "Vào bếp thôi! Tìm 3 dụng cụ hoặc hành động giúp đảm bảo vệ sinh khi nấu ăn.",
+    clues: []
+  },
+  {
+    id: 5,
+    imageUrl: "/assets/scenes/level-5_1.png",
+    mission: "Thử thách cuối cùng! Hãy tìm ra 3 gian hàng thực phẩm an toàn tại lễ hội ẩm thực này.",
+    clues: []
   }
 ];

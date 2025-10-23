@@ -11,11 +11,11 @@ export const GameScene = ({ onClueSelect }: GameSceneProps) => {
   const { currentLevel } = useGame();
 
   return (
-    <div className="w-full h-full relative overflow-hidden rounded-lg shadow-lg bg-gray-200">
+    <div className="w-full h-full relative overflow-hidden rounded-lg shadow-lg bg-gray-200 flex items-center justify-center">
       <TransformWrapper>
         <TransformComponent>
-          <div className="relative w-full h-full">
-            <img src={currentLevel.imageUrl} alt="Game Scene" className="w-full h-full object-contain" />
+          <div className="relative w-auto h-full">
+            <img src={currentLevel.imageUrl} alt="Game Scene" className="h-full w-auto object-contain" />
             {currentLevel.clues.map(clue => (
               <ClueComponent key={clue.id} clue={clue} onClueSelect={onClueSelect} />
             ))}
